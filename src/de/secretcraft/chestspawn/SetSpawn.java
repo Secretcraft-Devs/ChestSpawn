@@ -14,6 +14,7 @@ public class SetSpawn implements CommandExecutor{
         this.plugin = plugin;
     }
     
+    @Override
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
         Player player = null;
         if (sender instanceof Player) {
@@ -46,6 +47,8 @@ public class SetSpawn implements CommandExecutor{
                     Blockspawner.firstspawn(3);
                 }
                 player.sendMessage("Blöcke wurden neu gespawnt!");
+            } else {
+                //Nothing / Keine Fehlermeldung benötigt
             }
         }
         return false;
