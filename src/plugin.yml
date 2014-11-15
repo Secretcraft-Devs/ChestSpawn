@@ -1,0 +1,16 @@
+name: Chestspawn
+main: de.secretcraft.chestspawn.Chestspawn
+version: 1.0
+author: StoneCat
+
+commands:
+    setspawn:
+      description: Setzt den Spawn für die Kisten
+      usage: /<command>
+      permission: chestspawn.setspawn
+      permission-message: You don't have <permission>
+    respawnchests:
+      description: Ladet alle Chests neu und gibt Ihnene einene neuen Ort
+      usage: /<command>
+      permission: chestspawn.respawnchests
+      permission-message: You don't have <permission>
